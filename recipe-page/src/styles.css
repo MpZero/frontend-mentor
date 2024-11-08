@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+:root {
+  --white: hsl(0, 0%, 100%);
+
+  --brown-100: hsl(30, 54%, 90%);
+
+  --gray-150: hsl(30, 18%, 87%);
+
+  --gray-600: hsl(30, 10%, 34%);
+
+  --gray-900: hsl(24, 5%, 18%);
+
+  --brown-800: hsl(14, 45%, 36%);
+
+  --pink-800: hsl(332, 51%, 32%);
+
+  --pink-50: hsl(330, 100%, 98%);
+
+  --border-radius: 14px;
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* /////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////// */
+
+body {
+  font-family: "Outfit";
+  font-size: 16px;
+  background-color: var(--brown-100);
+}
+
+main,
+footer {
+  margin: 0 auto;
+  background-color: var(--white);
+  max-width: 768px;
+}
+
+.main-wrapper {
+  display: grid;
+  padding: 2em;
+  gap: 1.5em;
+}
+
+h1 {
+  color: var(--gray-900);
+  font-family: "Young Serif";
+  font-weight: 400;
+}
+
+p {
+  color: var(--gray-600);
+}
+
+h2 {
+  font-family: "Young Serif";
+  font-weight: 400;
+}
+
+h2,
+.ing-li,
+.ins-li,
+.table-bold-text {
+  color: var(--brown-800);
+}
+
+.prep-wrapper {
+  display: grid;
+  padding: 1em;
+  background-color: var(--pink-50);
+  border-radius: var(--border-radius);
+  gap: 1em;
+}
+
+ul {
+  display: grid;
+  gap: 1em;
+  padding-left: 1.5em;
+}
+
+.ing-ul,
+.ins-ol {
+  padding-bottom: 2em;
+  border-bottom: 1px solid var(--gray-150);
+}
+
+li > p {
+  padding-left: 0.7em;
+  font-weight: 400;
+}
+
+.prep-li {
+  color: var(--pink-800);
+}
+
+::marker {
+  font-family: "Outfit";
+  font-weight: bold;
+}
+
+ol {
+  padding-left: 1.4em;
+}
+.ins-li {
+  padding-bottom: 0.5em;
+}
+
+.prep-header {
+  font-family: "Outfit";
+  color: var(--pink-800);
+  font-size: 1.2em;
+  font-weight: 600;
+}
+table {
+  border-collapse: collapse;
+  font-family: "Outfit";
+}
+
+tr {
+  border-bottom: 1px solid var(--gray-150);
+}
+th {
+  padding: 0.6em 0em 0.5em 0em;
+  color: var(--gray-600);
+  font-weight: normal;
+}
+
+th {
+  padding-left: 0.7em;
+}
+
+td {
+  padding-left: 4em;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 6em;
+  }
+  main {
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+  }
+
+  .img-wrapper {
+    padding: 2em;
+  }
+
+  img {
+    border-radius: var(--border-radius);
+  }
+  .main-wrapper {
+    padding: 2em;
+  }
+
+  td {
+    padding-left: 10em;
+  }
+
+  footer {
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+  }
+}
+@media (min-width: 1440px) {
+  main,
+  footer {
+    max-width: 1000px;
+  }
+}
+
+@media (min-width: 2560px) {
+  main,
+  footer {
+    max-width: 1200px;
+  }
+}
