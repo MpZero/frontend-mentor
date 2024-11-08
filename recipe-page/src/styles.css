@@ -212,14 +212,14 @@ td {
   }
 
   .img-wrapper {
-    padding: 2em;
+    padding: 3em 3.3em 0;
   }
 
   img {
     border-radius: var(--border-radius);
   }
   .main-wrapper {
-    padding: 2em;
+  padding: 0em 3.3em 2em;
   }
 
   td {
