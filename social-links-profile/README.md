@@ -29,8 +29,8 @@ In this small project, you'll build out your social link-sharing profile. You ca
 
 ### Links
 
-- Solution URL: [Repo on GitHub](#)
-- Live Site URL: [Social Links page](#)
+- Solution URL: [Repo on GitHub](https://github.com/MpZero/frontend-mentor/tree/main/social-links-profile)
+- Live Site URL: [Social Links page](https://mpzero.github.io/frontend-mentor/social-links-profile/)
 
 ## My process
 
