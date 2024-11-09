@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  --border-radius: 14px;
+
+  --green: hsl(75, 94%, 57%);
+
+  --white: hsl(0, 0%, 100%);
+
+  --grey--700: hsl(0, 0%, 20%);
+
+  --grey--800: hsl(0, 0%, 12%);
+
+  --grey--900: hsl(0, 0%, 8%);
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* /////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////// */
+/* /////////////////////////////////////////////////////// */
+
+body {
+  font-family: "Inter";
+  text-align: center;
+  font-size: 14px;
+  padding: 6.4em 2em;
+  background-color: var(--grey--900);
+}
+
+main,
+.attribution {
+  margin: 0 auto;
+  max-width: 400px;
+  border-radius: var(--border-radius);
+  background-color: var(--grey--800);
+}
+
+.img-wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+}
+img {
+  border-radius: 50%;
+  width: 90px;
+}
+
+.text-wrapper {
+  padding: 0 2em;
+}
+h1 {
+  color: var(--white);
+  font-size: 1.8em;
+  font-weight: 600;
+}
+h2 {
+  color: var(--green);
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 1.3em;
+}
+p {
+  color: var(--white);
+  font-weight: 400;
+}
+
+.btn-wrapper {
+  display: grid;
+  padding: 2.3em;
+  gap: 1em;
+}
+
+button {
+  color: var(--white);
+  background-color: var(--grey--700);
+  border: none;
+  padding: 1em;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.4s, background-color 0.8s, transform 1s ease,
+    box-shadow 1s;
+}
+
+button:hover {
+  color: var(--grey--900);
+  background-color: var(--green);
+  transform: translateY(-4px);
+  -webkit-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 6px 6px 0px rgba(0, 0, 0, 0.75);
+}
+
+.attribution {
+  border: none;
+  color: var(--white);
+  padding: 1em;
+}
+
+a:link {
+  color: var(--green);
+}
+
+a:focus {
+  text-decoration: none;
+  background: black;
+  color: var(--white);
+}
+
+a:hover {
+  text-decoration: none;
+  background: var(--green);
+  color: var(--grey--900);
+}
+
+a:active {
+  background: var(--grey--900);
+  color: var(--green);
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: 8em 0 8em 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    padding: 12em 0 0 0;
+  }
+}
