@@ -164,6 +164,7 @@ button:hover {
   border: none;
   color: var(--white);
   padding: 1em;
+  font-size: 11px
 }
 
 a:link {
